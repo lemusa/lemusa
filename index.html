@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Landing Page</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* No scroll on desktop */
+    }
+
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh; /* Lock to viewport height */
+      text-align: center;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .brands img {
+      height: 50px;
+      margin: 10px;
+    }
+
+    footer {
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* Allow scrolling on mobile */
+    @media (max-width: 768px) {
+      body {
+        overflow: auto;
+      }
+
+      .page-wrapper {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1>Your Name</h1>
+      <p>Short tagline about what you do</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>A short paragraph about you — your work, passions, what ties your brands together.</p>
+    </section>
+
+    <section>
+      <h2>My Brands</h2>
+      <div class="brands">
+        <a href="https://brand1.com"><img src="brand1-logo.png" alt="Brand 1"></a>
+        <a href="https://brand2.com"><img src="brand2-logo.png" alt="Brand 2"></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Connect with me: 
+        <a href="mailto:you@example.com">Email</a> | 
+        <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> | 
+        <a href="https://youtube.com/@yourchannel">YouTube</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
