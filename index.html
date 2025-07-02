@@ -35,10 +35,26 @@
       padding: 20px;
     }
 
-    .brands img {
-      height: 50px;
-      margin: 10px;
-    }
+	.brands {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	.brands a {
+	  flex: 1 1 25%; /* 4 logos per row on desktop */
+	  max-width: 25%;
+	  padding: 10px;
+	  box-sizing: border-box;
+	}
+
+	.brands img {
+	  width: 100%;
+	  height: auto;
+	  max-height: 80px; /* optional: control height */
+	  object-fit: contain;
+	}
 
     footer {
       background: #f4f4f4;
