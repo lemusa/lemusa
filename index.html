@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Your name — brief description of what you do and your brands.">
+  <link rel="icon" href="images/favicon.ico">
   <title>Your Name | Landing Page</title>
   <style>
     html, body {
@@ -38,21 +40,17 @@
 	.brands {
 	  display: flex;
 	  flex-wrap: wrap;
-	  justify-content: center;
-	  align-items: center;
 	}
 
 	.brands a {
-	  flex: 1 1 25%; /* 4 logos per row on desktop */
-	  max-width: 25%;
-	  padding: 10px;
+	  flex: 1 0 25%; 
 	  box-sizing: border-box;
+	  padding: 10px;
 	}
 
 	.brands img {
-	  width: 100%;
-	  height: auto;
-	  max-height: 80px; /* optional: control height */
+	  width: 100%;    /* fills container */
+	  height: auto;   /* keeps aspect ratio */
 	  object-fit: contain;
 	}
 
